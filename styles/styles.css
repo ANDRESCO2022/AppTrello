@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_trello {
+    background: linear-gradient(rgb(9, 9, 165), rgb(94, 89, 89));
+    height: 5rem;
+    border: none;
+    color: black;
+    margin: 0;
+}
+
+
+.container_tables {
+    display: flex;
+    margin: .5rem;
+    padding: .9rem;
+
+}
+
+.container_asig {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.section_task {
+    padding: .5rem;
+    height: 80vh;
+    width: 18rem;
+    border: #256f97 5px double;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 10px 5px rgb(39, 62, 197);
+}
+h2{
+    font: size 20px;
+    font-family: 'Edu NSW ACT Foundation',
+    cursive;
+    font-weight: 600;
+    padding:.5rem;
+
+
+}
