@@ -14,38 +14,80 @@
     <header class="container_trello">
         <div class="header_trello ">
             <img class="header_img"><i class="fa-brands fa-trello"></i>
-            <button class="btn_create">
-
-            </button>
+            <button class="btn_create" id="myBtn">nueva tarea </button>
         </div>
-
     </header>
     <main class="container_tables">
-        <div class="container_asig">
+        <div class="container_asig" id="tables">
             <section class="section_task">
-                <h2>Task Asigned</h2>
+                <h2>Tarea asignada</h2>
                 <div class="section_colum">
-
                 </div>
             </section>
             <section class="section_task">
-                <h2>Task Process</h2>
+                <h2>Tarea en proceso</h2>
                 <div class="section_colum">
-
                 </div>
             </section>
             <section class="section_task">
-                <h2>Task Finished</h2>
+                <h2>Tarea finalizada</h2>
                 <div class="section_colum">
-
                 </div>
             </section>
-
-        </div>
+        </div>     
     </main>
+    <aside class="app" id="new_modal">
+        <div class="container_modal">
+            <div class="form_modal">
+                <h2 class="title_task">nueva tarea</h2>
+                <form class="form_new_task">
+                    <div class="form_label">
+                        <label for="title_task" class="form_new_task_label">
+                            Title
+                        </label>
+                        <input type="text" class="form_input" placeholder="write one title" />
+                    </div>
+
+                    <div class="task_asing">
+                        <label for="responsible" class="task__label">Responsable: </label>
+                        <select name="responsible_task" id="responsible_task">
+                            <option value=""> selecciona: </option>
+                            <option value="developer_01">desarrollador 1</option>
+                            <option value="developer_02">desarrollador 2</option>
+                        </select>
+                    </div>
+                    <div class="task_asing">
+                        <label for="details_task" class="form_task_description">Descripcion:</label>
+                        <textarea class="form_details" placeholder="write the new task"></textarea>
+                    </div>
+                    <div class="task_asing">
+                        <label for="time_Task" class="form_task_time">tiempo de  tarea:</label>
+                        <select name="deadLineTask" id="deadLineTask">
+                            <option value="">selecciona:</option>
+                            <option value="1">1 dia</option>
+                            <option value="2">2 dias</option>
+                            <option value="7">1 semana</option>
+                        </select>
+                    </div>
+
+                    <div class="task_asing_btn">
+                        <div class="form_task_button">
+                            <button class="bt_save" type="submit">Save</button>
+                            <button class="btn_reset" type="reset"
+                               >cancel</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </aside>
     <footer class=""></footer>
 
 
 </body>
-<script src="./main.js"></script>
+<script type="module" src="./main.js"></script>
+
+<script src="./js/helpers/modal.js"></script>
+
 </html>

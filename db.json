@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Frontend",
+      "person": "andres",
+      "details": "create interface client and token",
+      "state": "done",
+      "deadline": 1290410940,
+      "created": 1615352159
+    },
+    {
+      "id": 2,
+      "title": "Backend",
+      "person": "david",
+      "details": "Lcreate  api-rest full add JWT token",
+      "state": "to-do",
+      "deadline": 1615524959,
+      "created": 1615352159
+    }
+  ]
+}
