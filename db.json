@@ -13,8 +13,17 @@
       "id": 2,
       "title": "Backend",
       "person": "david",
-      "details": "Lcreate  api-rest full add JWT token",
+      "details": "create  api-rest full add JWT token",
       "state": "to-do",
+      "deadline": 1615524959,
+      "created": 1615352159
+    },
+    {
+      "id": 3,
+      "title": "fullstack",
+      "person": "nicolas",
+      "details": "create  full app gamer",
+      "state": "process",
       "deadline": 1615524959,
       "created": 1615352159
     }

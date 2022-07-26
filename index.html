@@ -19,17 +19,17 @@
     </header>
     <main class="container_tables">
         <div class="container_asig" id="tables">
-            <section class="section_task">
+            <section class="section_task" id="tasks_asing">
                 <h2>Tarea asignada</h2>
                 <div class="section_colum">
                 </div>
             </section>
-            <section class="section_task">
+            <section class="section_task" id="tasks_process">
                 <h2>Tarea en proceso</h2>
                 <div class="section_colum">
                 </div>
             </section>
-            <section class="section_task">
+            <section class="section_task" id="tasks_finished">
                 <h2>Tarea finalizada</h2>
                 <div class="section_colum">
                 </div>
@@ -45,7 +45,7 @@
                         <label for="title_task" class="form_new_task_label">
                             Title
                         </label>
-                        <input type="text" class="form_input" placeholder="write one title" />
+                        <input  id = "title_form" type="text" class="form_input" placeholder="write one title" />
                     </div>
 
                     <div class="task_asing">
@@ -57,7 +57,7 @@
                         </select>
                     </div>
                     <div class="task_asing">
-                        <label for="details_task" class="form_task_description">Descripcion:</label>
+                        <label for="details" class="form_task_description">Descripcion:</label>
                         <textarea class="form_details" placeholder="write the new task"></textarea>
                     </div>
                     <div class="task_asing">
@@ -86,8 +86,16 @@
 
 
 </body>
-<script type="module" src="./main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./js/helpers/moment.js"></script>
 
-<script src="./js/helpers/modal.js"></script>
+
+
+
+<script  src=" ./js/helpers/modal.js"> </script>
+<script type="module" src=" ./js/request/resquest.js"> </script>
+<script  src=" ./js/helpers/date.js"> </script>
+<script  src="./js/helpers/newTasks.js"> </script>
+
 
 </html>

@@ -1,3 +1,6 @@
-const dateFOrmat =(time,format-'DD/MM/YYYY')=>{
+
+
+
+const dateFormat = (time, format = 'DD/MM/YYYY') => {
     return moment.unix(time).format(format);
-}
+};
