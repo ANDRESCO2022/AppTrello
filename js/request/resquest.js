@@ -12,16 +12,24 @@ const allTasksResponse = data => {
 
 const addTask = task => {
   let newTasks = document.createElement('article');
+  newTasks.classList.add('card_task');
   let titleTask = document.createElement('h3');
+  titleTask.classList.add('card_title');
   titleTask.innerText = task.title;
   let responibleTask = document.createElement('p');
-  responibleTask.innerText = `responsable de  la  tarea:${task.person}`;
+  responibleTask.classList.add('card_person');
+  responibleTask.innerText = `Responsable: ${task.person}`;
   let detailTask = document.createElement('P');
+  detailTask.classList.add('card_detail');
   detailTask.innerHTML = `<span>${task.details}</span> </span>`;
-  let taskDate = document.createElement('p');
-  taskDate.innerHTML = `<div>${dateFormat(task.deadline)}</div>`;
   let createdTask = document.createElement('p');
-   createdTask.innerHTML = `<div>${dateFormat(task.created)}</div>`;
+  createdTask.innerHTML = `<div> Entrega: ${dateFormat(
+    task.created
+  )}</div>`;
+  let taskDate = document.createElement('p');
+  taskDate.innerHTML = `<div > Creado: ${dateFormat(
+    task.deadline
+  )}</div>`;
 
   newTasks.appendChild(titleTask);
   newTasks.appendChild(responibleTask);
@@ -30,7 +38,7 @@ const addTask = task => {
   newTasks.appendChild(createdTask);
 
   let toDoTask = document.querySelector('#tasks_asing');
-  let processTask = document.querySelector('#task_progress');
+  let processTask = document.querySelector('#tasks_process');
   let finishTask = document.querySelector('#tasks_finished');
   if (task.state === 'to-do') {
     toDoTask.appendChild(newTasks);

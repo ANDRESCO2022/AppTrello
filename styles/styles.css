@@ -1,25 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background: rgb(126 142 236 / 18%);
+}
 .container_trello {
     background: linear-gradient(rgb(9, 9, 165), rgb(94, 89, 89));
     height: 5rem;
     border: none;
     color: black;
-    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
+
+.header_trello>i {
+    color: #88e4e4;
+    font-size: 45px;
+}
+
+.btn_create {
+    color: #282a2a;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    background: lightskyblue;
+    font-weight: bold;
+}
+
+.btn_create:active {
+    transition: scale(.95);
+    right: 10px;
+
+}
 
 .container_tables {
     display: flex;
     margin: .5rem;
     padding: .9rem;
-
+    
 }
 
 .container_asig {
@@ -29,19 +55,162 @@
 
 .section_task {
     padding: .5rem;
-    height: 80vh;
-    width: 18rem;
+    height: 100vh;
+    width: 100%;
     border: #256f97 5px double;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow: 10px 10px 5px rgb(39, 62, 197);
+    box-shadow: 10px 10px 5px rgb(126, 142, 236);
+    overflow-y: auto;
+    background: ghostwhite;
 }
-h2{
+
+h2 {
     font: size 20px;
     font-family: 'Edu NSW ACT Foundation',
-    cursive;
+        cursive;
     font-weight: 600;
-    padding:.5rem;
+    padding: .5rem;
 
 
 }
+
+.card_task {
+    border: #022030 5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 3px 3px 5px rgb(59, 81, 209);
+    padding: 0.9rem;
+    margin: .5rem;
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+.card_title {
+    font-size: 15px;
+    border-bottom: 1px solid rgb(49, 49, 223);
+}
+
+.card_person {
+    margin-top: .4rem;
+}
+
+.app {
+    color: #efebd0;
+    position: fixed;
+    top: 5rem;
+    right: 0;
+    transform: translate(100%);
+    will-change: transform;
+    transition: transform 300ms ease-in-out;
+    z-index: 100;
+    border: 1px solid lightskyblue;
+    background: linear-gradient(59deg, #121316, rgb(9 9 165));
+    border-radius: 15px;
+    height: auto;
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+.app.active {
+    transform: initial;
+}
+
+.title_task {
+    text-align: center;
+    border-bottom: 1px solid #645a5a;
+}
+
+.task_asing {
+    display: grid;
+    margin: .1rem;
+    padding: .1rem;
+}
+
+.form_input {
+    width: 80%;
+    margin: 1rem;
+    border: none;
+    border-radius: 10px;
+    height: 1.2rem;
+    outline: none;
+}
+
+#responsible_task {
+    width: 80%;
+    margin: 1rem;
+    border: none;
+    border-radius: 10px;
+    height: 1.2rem;
+    outline: none;
+
+}
+
+.form_details {
+    width: 80%;
+    margin: 1rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Poppins',
+        sans-serif;
+
+}
+
+#post_time {
+    width: 80%;
+    margin: 1rem;
+    border: none;
+    border-radius: 10px;
+    height: 1.2rem;
+    outline: none;
+}
+
+.task_asing_btn {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.form_task_button {
+    display: flex;
+    width: 85%;
+    justify-content: space-around;
+    padding: .5rem;
+}
+
+.bt_save {
+    background: lightskyblue;
+    border-radius: 10px;
+    border: none;
+    color: rgb(55, 52, 52);
+    width: 35%;
+    font-weight: bold;
+
+
+}
+
+.btn_reset {
+    background: rgb(194, 27, 5);
+    ;
+    border-radius: 10px;
+    border: none;
+    color: rgb(240, 235, 235);
+    width: 35%;
+    font-weight: bold;
+
+
+
+}
+footer {
+   background: linear-gradient(#1616cb, #ebe0e0);
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 5rem;
+     font-family: 'Poppins',
+     sans-serif;
+
+}
+/*===================queries*/
+@media(min-width:500px) {}

@@ -1,5 +1,4 @@
 
-
 const form = document.querySelector('.form_new_task');
 form.addEventListener('submit', e => {
   e.preventDefault();
@@ -8,14 +7,12 @@ form.addEventListener('submit', e => {
   const data = {
     title: dataTask.title_form.value,
     person: dataTask.responsible_task.value,
-   details: dataTask.details.value,
-    deadline: Number(
-      moment().add(dataTask.form_task_time.value,'days').format('X')
-    ),
-    STATE: 'to-do',
+    details: dataTask.details.value,
+    deadline: Number(moment().add(dataTask.post_time.value, 'days').format('X')),
+    state: 'to-do',
     created: Number(moment().format('X')),
   };
-   console.log(data);
+  console.log(data);
 
   axios
     .post(`${API_URL}/tasks`, data)
