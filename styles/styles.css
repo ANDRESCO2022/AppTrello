@@ -213,4 +213,16 @@ footer {
 
 }
 /*===================queries*/
-@media(min-width:500px) {}
+@media(max-width:500px) {
+    .container_asig{
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+    }
+    .section_task{
+              padding: 0.2rem;
+              height: 60vh;
+              width: 85%;
+              margin: 0 auto;
+}
+}

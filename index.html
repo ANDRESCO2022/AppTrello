@@ -16,24 +16,24 @@
             <img class="header_img"><i class="fa-brands fa-trello"></i>
         </div>
         <div class="header_new_task">
-            <button class="btn_create" id="myBtn">nueva tarea </button>            
+            <button class="btn_create" id="myBtn">nueva tarea </button>
         </div>
     </header>
     <main class="container_tables">
         <div class="container_asig" id="tables">
-            <section class="section_task" id="tasks_asing">
+            <section class="section_task">
                 <h2>Tarea asignada</h2>
-                <div class="section_colum">
+                <div class="task_colum" id="tasks_asing">
                 </div>
             </section>
-            <section class="section_task" id="tasks_process">
+            <section class="section_task">
                 <h2>Tarea en proceso</h2>
-                <div class="section_colum">
+                <div class="task_colum" id="tasks_process">
                 </div>
             </section>
-            <section class="section_task" id="tasks_finished">
+            <section class="section_task">
                 <h2>Tarea finalizada</h2>
-                <div class="section_colum">
+                <div class="task_colum" id="tasks_finished">
                 </div>
             </section>
         </div>
@@ -44,12 +44,12 @@
                 <h2 class="title_task">nueva tarea</h2>
                 <form class="form_new_task">
                     <div class="form_label">
-                        <label for="title_task" class="form_new_task_label" ></label>
+                        <label for="title_task" class="form_new_task_label"></label>
                         <input id="title_form" type="text" class="form_input" placeholder=" Título" />
                     </div>
 
                     <div class="task_asing">
-                        <label for="responsible" class="task__label">  </label>
+                        <label for="responsible" class="task__label"> </label>
                         <select name="responsible_task" id="responsible_task">
                             <option value=""> Responsable: </option>
                             <option value="developer_01">desarrollador 1</option>
@@ -83,15 +83,16 @@
     </aside>
     <footer>
         <div class="footer_copyright">
-        <small>&copy; Andresco2022 all right reserved.</small>
+            <small>&copy; Andresco2022 all right reserved.</small>
         </div>
     </footer>
 
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/draggable.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/sortable.js"></script>
 <script src="./js/helpers/moment.js"></script>
-<script src="./js/helpers/draggableLib.js"></script>
 
 
 
@@ -100,7 +101,7 @@
 <script src=" ./js/helpers/date.js"> </script>
 <script src=" ./js/helpers/modal.js"> </script>
 <script src="./js/helpers/newTasks.js"> </script>
-<script src="./js/helpers/draggable.js"> </script>
+<script src="./js/helpers/draggandDrop.js"> </script>
 
 
 </html>

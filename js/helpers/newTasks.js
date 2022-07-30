@@ -12,7 +12,7 @@ form.addEventListener('submit', e => {
     state: 'to-do',
     created: Number(moment().format('X')),
   };
-  console.log(data);
+   
 
   axios
     .post(`${API_URL}/tasks`, data)
